@@ -1,3 +1,4 @@
+# Uso de depuracion
 def largo(texto):
     resultado = 0
     for _ in texto:
