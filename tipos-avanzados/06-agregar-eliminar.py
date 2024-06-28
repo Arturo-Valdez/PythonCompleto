@@ -1,0 +1,1 @@
+mascotas = ["Peluza", "Pulga", "Felipe", "Pachuco","Chachito Feliz", "Pachuco"]
