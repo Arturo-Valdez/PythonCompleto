@@ -11,3 +11,8 @@ print(nombre)#['Chanchito', 'Prdito', 'Paquillo']
 
 menosUsuarios = list(filter(lambda usuario : usuario[1]>2, usuarios))
 print(menosUsuarios)#[['Chanchito', 4], ['Paquillo', 5]]
+
+
+
+menosUsuarios = list(filter(lambda usuario : usuario[1]>2 and usuario[1]<5, usuarios))
+print(menosUsuarios)#[['Chanchito', 4]]
