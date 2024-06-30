@@ -12,13 +12,14 @@ usuarios = [
 # print(nombres)#['Chanchito', 'Prdito', 'Paquillo']
 
 
-#SEGUNDA FORMA transformamos y creamos nueva lista
+
+#SEGUNDA FORMA transformamos y creamos nueva lista // MAP
 #variable   expresion   ciclo   variablede interacion   en      lista usuarios
 # nombres =   [usuario[0] for     usuario                 in      usuarios]
 # print(nombres)#['Chanchito', 'Prdito', 'Paquillo']
 
 
-#FILTRAR ELEMENTOS
+#FILTRAR ELEMENTOS // filter
 # Extrae los valores mayores en la posicion de indice los mayores a 2
 # nombre = [usuario for usuario in usuarios if usuario[1] > 2]
 # print(nombre)#[['Chanchito', 4], ['Paquillo', 5]]
