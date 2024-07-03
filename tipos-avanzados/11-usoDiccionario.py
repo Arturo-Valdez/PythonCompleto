@@ -13,5 +13,12 @@ usuarios = [
 ]
 
 #OBTENER TODOS LOS USUARIOS
+# Karen
+# Joel
+# Hugo
+# Jorge
+# Roberto
+# Hernesto
+# Heriberto
 for usuario in usuarios:
     print(usuario["nombre"])
