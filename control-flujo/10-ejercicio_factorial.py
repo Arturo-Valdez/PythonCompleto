@@ -1,3 +1,11 @@
+# Ejercicio 1: En el lenguaje que te sientas más cómodo, utilizando un algoritmo recursivo, genera una función que reciba como parámetro un número entero como parámetro y calcule su factorial. (evite el uso de librerías predefinidas para el cálculo)
+
+# Ejemplos:
+
+# Parámetro 5 Retorno 120
+
+# Parámetro 9 Retorno 362880
+
 # Factorial es un valor que se multiplica por su valor anterior
 # 5! = 5 * 4 * 3 * 2 * 1
 
