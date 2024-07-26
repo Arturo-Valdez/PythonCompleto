@@ -8,6 +8,7 @@ animal.comer()
 print("Clase Animal \n")
 
 #/////////////////////////////////////////////////////////////////////
+#Herencia
 class Perro(Animal):
     def pasear(self):
         print("Paseando")
@@ -18,6 +19,8 @@ perro.pasear()
 print("Clase Perro, heredando Clase Animal \n")
 
 #//////////////////////////////////////////////////////////////////////////
+
+#Herencia multinivel
 class Santiago(Perro):
     def programar(self):
         print("Programando")
