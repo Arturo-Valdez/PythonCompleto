@@ -30,7 +30,7 @@ class Categoria:
 kayak = Producto("Kayak", 1000)
 bicicleta = Producto("Bicicleta", 750)
 surfboard = Producto("Surfboard", 500)                
-deportes = Categoria("Deportes", [bicicleta, kayak])
+deportes = Categoria("Deportes", [kayak, bicicleta])
 deportes.agregar(surfboard)
 
 #Producto: Bicicleta - Precio: 750
