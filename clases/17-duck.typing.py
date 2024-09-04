@@ -1,4 +1,4 @@
-
+#DUCK TYPING
 
 class Usuario():
     def guardar(self):
