@@ -6,15 +6,22 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
 from pathlib import Path
+from string import Template
 import smtplib
+
+
+plantilla = Path("11-paquetes-nativos/07-plantilla.html").read_text("utf-8")#DIRECCION DE PLANTILLA HTML
+template = Template(plantilla)#CLASE DE PLANTILLAS
+# cuerpo = template.substitute({"usuario": "Santiago Feliz"})
+cuerpo = template.substitute(usuario = "Santiago triste")#SUSTITUTO DE USUARIO
 
 path = Path("11-paquetes-nativos/descarga.jpeg")#DIRECCION DE IMAGEN
 mime_image = MIMEImage(path.read_bytes())#DIRECCION TRADUCIDA EN LECTURA BYTES OBLIGATORIO
 mensaje = MIMEMultipart()#CLASE DE CUERPO DEL CORREO EMAIL
 mensaje["from"] = "Hola mundo"#NOMBRE DE PRESENTACION
-mensaje["to"] = "recibir2@gmail.com"#CORREO AL QUE SE ENVIARA
+mensaje["to"] = "enviar2@gmail.com"#CORREO AL QUE SE ENVIARA
 mensaje["subject"] = "Esta es una prueba"#TITULO DE CORREO
-cuerpo = MIMEText("Cuerpo del mensaje")#CUERPO DE CORREO
+cuerpo = MIMEText(cuerpo, "html")#CUERPO DE CORREO
 
 mensaje.attach(cuerpo)#ANEXAR EN ATTACH TEXTO
 mensaje.attach(mime_image)#ANEXAR EN ATTACH IMAGEN
